@@ -6,8 +6,7 @@ class Song
   attr_accessor :name
   attr_reader :artist
   
-  extend Memorable::ClassMethods
-  extend Findable::ClassMethods
+  extend Memorable::ClassMethods, Findable::ClassMethods
   
   
   @@songs = []
